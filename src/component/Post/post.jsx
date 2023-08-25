@@ -82,16 +82,17 @@ useEffect(()=>{
          <input type="text" placeholder='enter the description' value={description} onChange={(e) => setDescription(e.target.value)} />
        <button type='submit'>Create</button>
       </form>
-      {task.map((t)=>(
-        <div key={t._id} className='allPost'>
-        <div>
+    <div  className='allPost'>
+    {task.map((t)=>(
+        
+        <div key={t._id}>
         {/* <p>Name :</p> */}
         <p>title : <b>{t.title}</b> </p>
         <p>description : <b>{t.description}</b> </p>
         <p>statud : <b>{t.status} </b></p>
         <button onClick={()=>openModal(t._id)}>Update</button> <br /> <br />
         <button onClick={()=>deletetask(t._id)}>Delete</button> <br /> <br />
-        {modal === true && (
+        {modal === true && id === t._id && (
             <form onSubmit={updateTask} className="createPost">
         <input type="text" placeholder='enter the title' value={title} onChange={(e) => setTitle(e.target.value)} />
          <input type="text" placeholder='enter the description' value={description} onChange={(e) => setDescription(e.target.value)} />
@@ -105,8 +106,8 @@ useEffect(()=>{
             </form>
         )}
         </div>
-       </div>
-      ))}
+       
+      ))}</div>
     </div>
   )
 }

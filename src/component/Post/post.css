@@ -1,7 +1,7 @@
 .post{
     width: 100%;
     height:  fit-content;
-    padding: 50px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,10 +34,12 @@
 .allPost{
     width: 100%;
     height: fit-content;
-    padding: 20px;
+    padding: 0 15px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 20px;
+    /* justify-content: space-between; */
 }
 
 .allPost >div{
