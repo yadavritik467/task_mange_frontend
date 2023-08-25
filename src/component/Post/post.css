@@ -1,0 +1,51 @@
+.post{
+    width: 100%;
+    height:  fit-content;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.createPost{
+    padding: 10px;
+    width: 300px ;
+    height: fit-content;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.createPost > input {
+    width: 100%;
+    text-align: center;
+  font-size: 0.9rem;  
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+}
+
+
+
+.allPost{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.allPost >div{
+    width: 310px;
+    height: fit-content;
+    border: 1px solid grey;
+    border-radius: 5px;
+    
+    padding: 10px;
+
+}
